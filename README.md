@@ -26,6 +26,10 @@ License
 -------
 *(To do.)*
 
+Similar Ideas
+-------------
+* [Interstate](http://interstateapp.com/tour)
+* [Cultured Code’s development status](http://culturedcode.com/status/)
 
 Related Projects
 ----------------
