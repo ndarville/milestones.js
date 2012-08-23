@@ -1,5 +1,6 @@
 README
 ======
+*(Insert screenshots here.)*
 
 Why `milestones.js`?
 --------------------
@@ -9,13 +10,67 @@ Even Github’s [milestones][milestones] system has its shortcomings, because yo
 
 But consider the benefits of being able to communicate the milestones to your ordinary user. Every software developer worth his or her salt wants to automate *everything*, and leveraging the [milestones API][api] can accomplish this, if developers use and update their milestones every now and then.
 
-
 Installation
 ------------
 *(To do.)*
 
-Screenshots
------------
+1. [Download][download] `milestones.js`
+2. Import `milestones.js` (and jQuery), and include an empty `ul` container with the id `#milestones` somewhere in your body text:
+
+    ~~~html
+    <head>
+        <!-- (...) -->
+        <script type="text/javascript" src="https://example.com/jquery.min.js"></script>
+        <script type="text/javascript" src="https://example.com/milestones.min.js"></script>
+        <!-- (...) -->
+    </head>
+    <body>
+        <!-- (...) -->
+        <ul class="milestones">
+        </ul>
+        <!-- (...) -->
+    </body>
+    ~~~
+
+3. Fill out all mandatory arguments—and some of the optional, if you so desire
+
+### Parameters ###
+
+When you first download the code for `milestones.js`, it will look like this:
+
+~~~js
+// milestones.js source
+~~~
+
+You will notice `"username"` and `"repo"` in the code. These are *mandatory* arguments and must be replaced by your own GitHub details.
+
+Here is an overview of all parameters available to you in `milestones.js`:
+
+#### Mandatory ####
+
+1. `username`
+2. `repo`
+
+#### Optional ####
+
+Parameter   | Values                 | Default Value | API Default
+:-----------|:-----------------------|:--------------|------------
+css_file    | null, file             | null          | (N/A)
+show_due    | boolean                | true          | (N/A)
+show_closed | boolean                | false         | true
+sort_by     | due_date, completeness | due_date      | due_date
+sort_order  | desc, asc              | desc          | desc
+
+#### Under Consideration ####
+
+Parameter         | Values  | Default Value
+:-----------------|:--------|:-------------
+milestone_id      | int     | 0
+display_cap       | int     | 0
+show_descriptions | boolean | false
+
+### Example Code ###
+
 *(To do.)*
 
 Demo
@@ -28,14 +83,16 @@ License
 
 Similar Ideas
 -------------
-* [Interstate](http://interstateapp.com/tour)
-* [Cultured Code’s development status](http://culturedcode.com/status/)
+* [Interstate](//interstateapp.com/tour)
+* [Cultured Code’s development status](//culturedcode.com/status/)
+* [Status Charts](//statuschart.com/)
 
 Related Projects
 ----------------
 * [Release Notes](https://github.com/posabsolute/releasenotes)
-* [DocumentUp](http://documentup.com/#gh-pages)
+* [DocumentUp](//documentup.com/#gh-pages)
 
 
-[milestones]:   http://blog.hackerbeers.com/2012/06/how-hackerbeers-uses-github-milestones-to-stay-focused-and-make-progress/
-[api]:          http://developer.github.com/v3/issues/milestones/
+[milestones]:   //blog.hackerbeers.com/2012/06/how-hackerbeers-uses-github-milestones-to-stay-focused-and-make-progress/
+[api]:          //developer.github.com/v3/issues/milestones/
+[download]:     https://github.com/ndarville/milestones.js/downloads
