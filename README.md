@@ -26,7 +26,7 @@ Installation
     </head>
     <body>
         <!-- (...) -->
-        <ul class="milestones">
+        <ul id="milestones">
         </ul>
         <!-- (...) -->
     </body>
