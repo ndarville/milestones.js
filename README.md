@@ -39,7 +39,20 @@ Installation
 When you first download the code for `milestones.js`, it will look like this:
 
 ~~~js
-// milestones.js source
+// (...)
+
+// Mandatory arguments
+    var username = "username";
+    var repo     = "repo";
+    
+// Optional arguments    
+    var sort_by = "due_date";
+    var sort_order = "desc";
+    var css_file = null;
+    var show_due = true;
+    var show_closed = false;
+
+// (...)
 ~~~
 
 You will notice `"username"` and `"repo"` in the code. These are *mandatory* arguments and must be replaced by your own GitHub details.
