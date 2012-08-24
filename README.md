@@ -12,9 +12,8 @@ But consider the benefits of being able to communicate the milestones to your or
 
 Installation
 ------------
-*(To do.)*
 
-1. [Download][download] `milestones.js`
+1. [Download][download] `milestones.js`.
 2. Import `milestones.js` (and jQuery), and include an empty `ul` container with the id `#milestones` somewhere in your body text:
 
     ~~~html
@@ -32,7 +31,7 @@ Installation
     </body>
     ~~~
 
-3. Fill out all mandatory arguments—and some of the optional, if you so desire
+3. Fill out all mandatory arguments—and some of the optional, if you so desire.
 
 ### Parameters ###
 
@@ -41,11 +40,11 @@ When you first download the code for `milestones.js`, it will look like this:
 ~~~js
 // (...)
 
-// Mandatory arguments
+// Mandatory parameters
     var username = "username";
     var repo     = "repo";
     
-// Optional arguments    
+// Optional parameters
     var sort_by = "due_date";
     var sort_order = "desc";
     var css_file = null;
@@ -55,7 +54,9 @@ When you first download the code for `milestones.js`, it will look like this:
 // (...)
 ~~~
 
-You will notice `"username"` and `"repo"` in the code. These are *mandatory* arguments and must be replaced by your own GitHub details.
+You will notice `"username"` and `"repo"` in the code. These are *mandatory* parameters and must be replaced by your own GitHub details; unlike the mandatory parameters, the optional have default values.
+
+If you use the minified script, you will have to search for the individual values you want to change. Or you can change the regular script and minify it yourself.
 
 Here is an overview of all parameters available to you in `milestones.js`:
 
@@ -81,10 +82,6 @@ Parameter         | Values  | Default Value
 milestone_id      | int     | 0
 display_cap       | int     | 0
 show_descriptions | boolean | false
-
-### Example Code ###
-
-*(To do.)*
 
 Demo
 ----
