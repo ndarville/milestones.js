@@ -24,14 +24,14 @@ $(document).ready(function() {
     function displayMilestones(milestones) {
         var ul = $("#milestones");
         $.each(milestones, function(i) {
-            var milestone = milestones[i]
-            var link = 
-                '<a href="https://github.com/'+ 
-                username+'/'+repo+
-                '/issues?milestone='+(i+1)+'">'+
-                milestone.title+'</a>';
-
             if (milestone.state == "open" || show_closed) {
+                var milestone = milestones[i]
+                var link = 
+                    '<a href="https://github.com/'+ 
+                    username+'/'+repo+
+                    '/issues?milestone='+(i+1)+'">'+
+                    milestone.title+'</a>';
+
                 var li = document.createElement("li");
                 $(li).text(
                     link +
