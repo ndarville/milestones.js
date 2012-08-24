@@ -18,13 +18,7 @@ $(document).ready(function() {
         var open = milestone.open_issues;
         var closed = milestone.closed_issues;
 
-        if (closed == 0) {
-            return 0
-        }
-
-        else {
-            return Math.round(closed / (open + closed) * 100)
-        }
+        return closed == 0 ? 0 : Math.round(closed / (open + closed) * 100)
     }
     
     function displayMilestones(milestones) {
@@ -36,7 +30,7 @@ $(document).ready(function() {
                 username+'/'+repo+
                 '/issues?milestone='+(i+1)+'">'+
                 milestone.title+'</a>';
-                
+
             if (milestone.state == "open" || show_closed) {
                 var li = document.createElement("li");
                 $(li).text(
