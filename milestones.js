@@ -116,4 +116,4 @@ $(document).ready(function() {
     $.ajax({
         success: displayMilestones
     });
-});​
+});
