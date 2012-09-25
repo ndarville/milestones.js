@@ -12,7 +12,7 @@ But consider the benefits of being able to communicate the milestones to your or
 
 Demo
 ----
-Check out the working example at [jsFiddle](http://jsfiddle.net/shrZL/). Note that it does not rely on `css_file` to load the CSS.
+Check out the working example at [jsFiddle](http://jsfiddle.net/aUS6m/). Note that it does not rely on `css_file` to load the CSS.
 
 Installation
 ------------
@@ -51,6 +51,7 @@ When you first download the code for `milestones.js`, it will look like this:
     var sort_by = "due_date";
     var sort_order = "desc";
     var show_due = true;
+    var show_state = "open"
     var show_closed = false;
 
 // (...)
@@ -70,10 +71,11 @@ Here is an overview of all parameters available to you in `milestones.js`:
 #### Optional ####
 Parameter   | Values                 | Default Value | API Default
 :-----------|:-----------------------|:--------------|------------
-show_due    | boolean                | true          | (N/A)
-show_closed | boolean                | false         | true
 sort_by     | due_date, completeness | due_date      | due_date
 sort_order  | desc, asc              | desc          | desc
+show_due    | boolean                | true          | (N/A)
+show_state  | open, closed           | open          | open
+show_closed | boolean                | false         | true
 
 #### Under Consideration ####
 Parameter         | Values  | Default Value

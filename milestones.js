@@ -9,10 +9,13 @@ $(document).ready(function() {
     var css_file = "" // "/css/milestones.min.css"
     
 // Optional arguments    
-    // var sort_by = "due_date";
-    // var sort_order = "desc";
+    var sort_by = "due_date";
+    var sort_order = "desc";
     var show_due = true;
+    var show_state = "open"
     var show_closed = false;
+    
+    var queries = 'sort='+sort_by+'&direction='+sort_order+'&state='+show_state;
 
     function getCompletionStatus(milestone) {
         var open = milestone.open_issues;
@@ -104,7 +107,7 @@ $(document).ready(function() {
     }
     
     $.ajaxSetup({
-        url: 'https://api.github.com/repos/'+username+'/'+repo+'/milestones',
+        url: 'https://api.github.com/repos/'+username+'/'+repo+'/milestones?'+queries,
         type: "GET",
         datatype: "jsonp",
         ifModified: true
