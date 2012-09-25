@@ -11,7 +11,7 @@ $(document).ready(function() {
 // Optional arguments    
     // var sort_by = "due_date";
     // var sort_order = "desc";
-    // var show_due = true;
+    var show_due = true;
     var show_closed = false;
 
     function getCompletionStatus(milestone) {
@@ -90,12 +90,13 @@ $(document).ready(function() {
                 'https://github.com/'+ 
                 username+'/'+repo+
                 '/issues?milestone='+(i+1);
+            var due = show_due == true ? '<em>'+getRelativeDate(milestone)+'</em>' : "";
 
             if (milestone.state == "open" || show_closed) {
                 var li = document.createElement("li");
                 $(li).
                     append($("<a>", {'href': url}).html(
-                        '<em>'+getRelativeDate(milestone)+'</em>'+milestone.title)).                    
+                       due+milestone.title)).                    
                     append($("<span>", {'style': 'width:' + getCompletionStatus(milestone) + '%;'}).text(getCompletionStatus(milestone) + '%'));
                 ul.append(li);
             }
