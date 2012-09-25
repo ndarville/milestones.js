@@ -19,7 +19,7 @@ Installation
 1. [Download][download] `milestones.js`.
 2. Import `milestones.js` (and jQuery), and include an empty `ul` container with the id `#milestones` somewhere in your body text:
 
-    ~~~html
+    ```html
     <head>
         <!-- (...) -->
         <script type="text/javascript" src="/js/jquery.min.js"></script>
@@ -32,14 +32,14 @@ Installation
         </ul>
         <!-- (...) -->
     </body>
-    ~~~
+    ```
 
 3. Fill out all mandatory arguments—and some of the optional, if you so desire.
 
 ### Parameters ###
 When you first download the code for `milestones.js`, it will look like this:
 
-~~~js
+```js
 // (...)
 
 // Mandatory parameters
@@ -54,7 +54,7 @@ When you first download the code for `milestones.js`, it will look like this:
     var show_closed = false;
 
 // (...)
-~~~
+```
 
 You will notice `"username"` and `"repo"` in the code. These are *mandatory* parameters and must be replaced by your own GitHub details; unlike the mandatory parameters, the optional have default values.
 
