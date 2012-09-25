@@ -12,7 +12,7 @@ $(document).ready(function() {
     var sort_by = "due_date";
     var sort_order = "desc";
     var show_due = true;
-    var show_state = "open"
+    var show_state = "open";
     var show_closed = false;
     
     var queries = 'sort='+sort_by+'&direction='+sort_order+'&state='+show_state;
@@ -21,7 +21,7 @@ $(document).ready(function() {
         var open = milestone.open_issues;
         var closed = milestone.closed_issues;
 
-        return closed == 0 ? 0 : Math.round(closed / (open + closed) * 100)
+        return closed == 0 ? 0 : Math.round(closed / (open + closed) * 100);
     }
 
     function getRelativeDate(milestone) {
