@@ -3,7 +3,8 @@
 ** Project information at http://git.io/3-0xBg */
 
 ul#milestones {
-  width: 350px;
+  width: 100%;
+  max-width: 350px;
   margin: 0 auto;
 }
     #milestones li {
