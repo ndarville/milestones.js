@@ -4,6 +4,7 @@
 
 ul#milestones {
   width: 350px;
+  margin: 0 auto;
 }
     #milestones li {
       list-style: none;
