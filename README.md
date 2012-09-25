@@ -1,6 +1,6 @@
 README
 ======
-*(Insert screenshots here.)*
+![Screenshot](https://github.com/ndarville/milestones.js/raw/master/screenshots/screenshot.png)
 
 Why `milestones.js`?
 --------------------
@@ -10,17 +10,20 @@ Even Github’s [milestones][milestones] system has its shortcomings, because yo
 
 But consider the benefits of being able to communicate the milestones to your ordinary user. Every software developer worth his or her salt wants to automate *everything*, and leveraging the [milestones API][api] can accomplish this, if developers use and update their milestones every now and then.
 
+Demo
+----
+Check out the working example at [jsFiddle](http://jsfiddle.net/hgEsF/). Note that it does not rely on `css_file` to load the CSS.
+
 Installation
 ------------
-
 1. [Download][download] `milestones.js`.
 2. Import `milestones.js` (and jQuery), and include an empty `ul` container with the id `#milestones` somewhere in your body text:
 
     ~~~html
     <head>
         <!-- (...) -->
-        <script type="text/javascript" src="https://example.com/jquery.min.js"></script>
-        <script type="text/javascript" src="https://example.com/milestones.min.js"></script>
+        <script type="text/javascript" src="/js/jquery.min.js"></script>
+        <script type="text/javascript" src="/js/milestones.min.js"></script>
         <!-- (...) -->
     </head>
     <body>
@@ -34,7 +37,6 @@ Installation
 3. Fill out all mandatory arguments—and some of the optional, if you so desire.
 
 ### Parameters ###
-
 When you first download the code for `milestones.js`, it will look like this:
 
 ~~~js
@@ -43,11 +45,11 @@ When you first download the code for `milestones.js`, it will look like this:
 // Mandatory parameters
     var username = "username";
     var repo     = "repo";
+    var css_file = "" // "/css/milestones.min.css"
     
 // Optional parameters
     var sort_by = "due_date";
     var sort_order = "desc";
-    var css_file = null;
     var show_due = true;
     var show_closed = false;
 
@@ -56,40 +58,33 @@ When you first download the code for `milestones.js`, it will look like this:
 
 You will notice `"username"` and `"repo"` in the code. These are *mandatory* parameters and must be replaced by your own GitHub details; unlike the mandatory parameters, the optional have default values.
 
-If you use the minified script, you will have to search for the individual values you want to change. Or you can change the regular script and minify it yourself.
+`css_file` must point to your `milestones.min.css` (or `milestones.css`) in order for your stylesheet to work.
 
 Here is an overview of all parameters available to you in `milestones.js`:
 
 #### Mandatory ####
-
 1. `username`
 2. `repo`
+3. `css_file`
 
 #### Optional ####
-
 Parameter   | Values                 | Default Value | API Default
 :-----------|:-----------------------|:--------------|------------
-css_file    | null, file             | null          | (N/A)
 show_due    | boolean                | true          | (N/A)
 show_closed | boolean                | false         | true
 sort_by     | due_date, completeness | due_date      | due_date
 sort_order  | desc, asc              | desc          | desc
 
 #### Under Consideration ####
-
 Parameter         | Values  | Default Value
 :-----------------|:--------|:-------------
 milestone_id      | int     | 0
 display_cap       | int     | 0
 show_descriptions | boolean | false
 
-Demo
-----
-*(To do.)*
-
 License
 -------
-*(To do.)*
+*(To do. Nothing restrictive.)*
 
 Similar Ideas
 -------------
