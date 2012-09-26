@@ -88,6 +88,12 @@ License
 -------
 *(To do. Nothing restrictive.)*
 
+Credits
+-------
+When I first banged out [a sketch](https://github.com/ndarville/milestones.js/issues/2) for the design, I went on to conceive of the idea in CSS. My initial code was decent, but I inevitably had to consult my trusted CSS handbook <i>[Handcrafted CSS][handcrafted]</i> on the best way to scale the progress bar through CSS. Turns out, the example project in the second chapter by **Dan Cederholm** proved more apt than I could have imagined. In his example, the progress bar scales through the *entire* `li`, which in turn leaves more space for the milestone name and due date.
+
+Although this is just a basic, preliminary design (the current CSS doesn’t handle long names very well), I would like to thank **Dan Cederholm** for his great book. This experience just goes to show how relevant and valuable his book will remain. You should check it out. (You shouldn’t get the version with the DVD in my opinion, though.)
+
 Similar Ideas
 -------------
 * [Interstate](//interstateapp.com/tour)
@@ -103,3 +109,4 @@ Related Projects
 [milestones]:   //blog.hackerbeers.com/2012/06/how-hackerbeers-uses-github-milestones-to-stay-focused-and-make-progress/
 [api]:          //developer.github.com/v3/issues/milestones/
 [download]:     https://github.com/ndarville/milestones.js/downloads
+[handcrafted]:  http://handcraftedcss.com/
