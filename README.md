@@ -12,7 +12,7 @@ But consider the benefits of being able to communicate the milestones to your or
 
 Demo
 ----
-Check out the working example at [jsFiddle](http://jsfiddle.net/4ySxL/). Note that it does not rely on `css_file` to load the CSS.
+Check out the working example at [jsFiddle](http://jsfiddle.net/NGbU4/). Note that it does not rely on `css_file` to load the CSS. You can also try this locally by downloading the `demo/` project folder to your computer.
 
 Installation
 ------------

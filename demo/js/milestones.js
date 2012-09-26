@@ -4,9 +4,9 @@ $(document).ready(function() {
 // Project information at http://git.io/3-0xBg
 
 // Mandatory arguments
-    var username = "";
-    var repo     = "";
-    var css_file = "" // "css/milestones.min.css"
+    var username = "twitter";
+    var repo     = "bootstrap";
+    var css_file = "css/milestones.min.css";
     
 // Optional arguments
     var sort_by = "due_date";
