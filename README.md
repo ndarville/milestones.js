@@ -86,7 +86,7 @@ show_descriptions | boolean | false
 
 License
 -------
-*(To do. Nothing restrictive.)*
+*“Don‘t be a dick.”*
 
 Credits
 -------
