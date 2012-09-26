@@ -22,8 +22,8 @@ Installation
     ```html
     <head>
         <!-- (...) -->
-        <script type="text/javascript" src="/js/jquery.min.js"></script>
-        <script type="text/javascript" src="/js/milestones.min.js"></script>
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/milestones.min.js"></script>
         <!-- (...) -->
     </head>
     <body>
@@ -43,9 +43,9 @@ When you first download the code for `milestones.js`, it will look like this:
 // (...)
 
 // Mandatory parameters
-    var username = "username";
-    var repo     = "repo";
-    var css_file = "" // "/css/milestones.min.css"
+    var username = "";
+    var repo     = "";
+    var css_file = "" // "css/milestones.min.css"
     
 // Optional parameters
     var sort_by = "due_date";
