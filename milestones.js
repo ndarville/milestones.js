@@ -6,7 +6,7 @@ $(document).ready(function() {
 // Mandatory arguments
     var username = "";
     var repo     = "";
-    var css_file = "" // "css/milestones.min.css"
+    var css_file = ""; // "css/milestones.min.css"
     
 // Optional arguments
     var sort_by = "due_date";
@@ -101,7 +101,9 @@ $(document).ready(function() {
                     $(li).
                         append($("<a>", {'href': url}).html(
                            due+milestone.title)).                    
-                        append($("<span>", {'style': 'width:' + getCompletionStatus(milestone) + '%;'}).text(getCompletionStatus(milestone) + '%'));
+                        append($("<span>",
+                            {'style': 'width:' + getCompletionStatus(milestone) + '%;'})
+                            .text(getCompletionStatus(milestone) + '%'));
                     ul.append(li);
                 }
             });
