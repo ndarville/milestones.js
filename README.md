@@ -98,7 +98,7 @@ Similar Ideas
 -------------
 * [Interstate](//interstateapp.com/tour)
 * [Cultured Code’s development status](//culturedcode.com/status/)
-* [Status Charts](//statuschart.com/)
+* [Status Charts](//www.statuschart.com/)
 
 Related Projects
 ----------------
