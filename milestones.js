@@ -6,7 +6,7 @@ $(document).ready(function() {
 // Mandatory arguments
     var username = "";
     var repo     = "";
-    var css_file = "" // "css/milestones.min.css"
+    var css_file = ""; // "css/milestones.min.css"
     
 // Optional arguments
     var sort_by = "due_date";
