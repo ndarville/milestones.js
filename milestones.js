@@ -101,7 +101,9 @@ $(document).ready(function() {
                     $(li).
                         append($("<a>", {'href': url}).html(
                            due+milestone.title)).                    
-                        append($("<span>", {'style': 'width:' + getCompletionStatus(milestone) + '%;'}).text(getCompletionStatus(milestone) + '%'));
+                        append($("<span>",
+                            {'style': 'width:' + getCompletionStatus(milestone) + '%;'})
+                            .text(getCompletionStatus(milestone) + '%'));
                     ul.append(li);
                 }
                 $('#milestones:empty').html(
