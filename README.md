@@ -33,15 +33,15 @@ Installation
     </body>
     ```
 
-    *Important!* You *must* write `<ul id="milestones"></ul>` as *one line*, because of the way the script detects an empty list of milestones to display.
+    **Important!** You *must* write `<ul id="milestones"></ul>` as *one line*, because of the way the script detects an empty list of milestones to display.
 
-    *Do* write it like this:
+    **Do** write it like this:
 
     ```html
     <ul id="milestones"></ul>
     ```
 
-    *Don’t* write it like this:
+    **Don’t** write it like this:
 
     ```html
     <ul id="milestones">
