@@ -61,7 +61,7 @@ When you first download the code for `milestones.js`, it will look like this:
 // Mandatory parameters
     var username = "";
     var repo     = "";
-    var css_file = "" // "css/milestones.min.css"
+    var css_file = ""; // "css/milestones.min.css"
     
 // Optional parameters
     var sort_by = "due_date";
