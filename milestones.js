@@ -104,6 +104,9 @@ $(document).ready(function() {
                         append($("<span>", {'style': 'width:' + getCompletionStatus(milestone) + '%;'}).text(getCompletionStatus(milestone) + '%'));
                     ul.append(li);
                 }
+                $('#milestones:empty').html(
+                    '<li class="no-milestones"><i>No current milestones for this repo</i></li>'
+                );
             });
         });
     }

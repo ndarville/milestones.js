@@ -10,7 +10,8 @@ ul#milestones {
     #milestones li {
       list-style: none;
     }
-        ul#milestones li a {
+        ul#milestones li a,
+        ul#milestones li.no-milestones {
           color: #3792b3;
         }
             ul#milestones li a:visited {
@@ -18,7 +19,8 @@ ul#milestones {
             }
 /***/
 * html ul.list li,
-* html ul#milestones li a {
+* html ul#milestones li a,
+* html ul#milestones li.no-milestones {
   height: 1%;
 }
 
@@ -30,17 +32,20 @@ ul#milestones li {
       background: #ecebe1;
     }
 
-    ul#milestones li:hover a {
+    ul#milestones li:hover a,
+    ul#milestones li.no-milestones:hover {
       color: rgba(0,0,0, .5) !important;
     }
 
-    ul#milestones li a {
+    ul#milestones li a,
+    ul#milestones li.no-milestones {
       position: relative;
       display: block;
       padding: 7px;
       z-index: 2;
     }
-    ul#milestones li a:link {
+    ul#milestones li a:link,
+    ul#milestones li.no-milestones {
       font-weight: bold;
       text-decoration: none;
       color: #3792b3;

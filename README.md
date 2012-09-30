@@ -28,11 +28,27 @@ Installation
     </head>
     <body>
         <!-- (...) -->
-        <ul id="milestones">
-        </ul>
+        <ul id="milestones"></ul>
         <!-- (...) -->
     </body>
     ```
+
+    *Important!* You *must* write `<ul id="milestones"></ul>` as *one line*, because of the way the script detects an empty list of milestones to display.
+
+    *Do* write it like this:
+
+    ```html
+    <ul id="milestones"></ul>
+    ```
+
+    *Don’t* write it like this:
+
+    ```html
+    <ul id="milestones">
+    </ul>
+    ```
+
+    (jQuery’s `:empty` selector will only work, if the element (`ul`) contains no children *and* no whitespace.)
 
 3. Fill out all mandatory arguments—and some of the optional, if you so desire.
 
