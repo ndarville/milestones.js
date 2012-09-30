@@ -94,11 +94,12 @@ show_state  | open, closed           | open          | open
 show_closed | boolean                | false         | true
 
 #### Under Consideration ####
-Parameter         | Values  | Default Value
-:-----------------|:--------|:-------------
-milestone_id      | int     | 0
-display_cap       | int     | 0
-show_descriptions | boolean | false
+Parameter           | Values  | Default Value
+:-------------------|:--------|:-------------
+milestone_id        | int     | 0
+display_cap         | int     | 0
+show_descriptions   | boolean | false
+expand_descriptions | boolean | false
 
 License
 -------
