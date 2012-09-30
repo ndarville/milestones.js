@@ -22,7 +22,7 @@ $(document).ready(function() {
         var open = milestone.open_issues;
         var closed = milestone.closed_issues;
 
-        return closed == 0 ? 0 : Math.round(closed / (open + closed) * 100);
+        return closed === 0 ? 0 : Math.round(closed / (open + closed) * 100);
     }
 
     function getRelativeDate(milestone) {
@@ -61,20 +61,20 @@ $(document).ready(function() {
                 }
             }
             else {
-                if (days == 1) {
+                if (days === 1) {
                     return "Due tomorrow";
                 }
                 else if (days < 7) {
                     return "Due in "+Math.round(days)+" days";
                 }
-                else if (days == 7) {
+                else if (days === 7) {
                     return "Due in one week";
                 }
                 else if (days/7 < 4) {
                     days /= 7;
                     return "Due in "+Math.round(days)+" weeks";
                 }
-                else if (days/7 == 4) {
+                else if (days/7 === 4) {
                     return "Due in one month";
                 }
                 else {
@@ -94,9 +94,9 @@ $(document).ready(function() {
                     'https://github.com/'+ 
                     username+'/'+repo+
                     '/issues?milestone='+(i+1);
-                var due = show_due == true ? '<em>'+getRelativeDate(milestone)+'</em>' : "";
+                var due = show_due === true ? '<em>'+getRelativeDate(milestone)+'</em>' : "";
 
-                if (milestone.state == "open" || show_closed) {
+                if (milestone.state === "open" || show_closed) {
                     var li = document.createElement("li");
                     $(li).
                         append($("<a>", {'href': url}).html(
