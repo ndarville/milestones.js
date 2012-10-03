@@ -11,9 +11,8 @@ $(document).ready(function() {
     var show_state = "open";
     var show_closed = false;
 
-    // Queries
+    // Fetch milestones from GitHub using queries based on our arguments
     var queries = 'sort='+sort_by+'&direction='+sort_order+'&state='+show_state;
-    // GET URL appended with queries based on our arguments
     var github = 'https://api.github.com/repos/'+username+'/'+repo+'/milestones?'+queries;
 
     // Helper function.
@@ -25,7 +24,7 @@ $(document).ready(function() {
         return closed === 0 ? 0 : Math.round(closed / (open + closed) * 100);
     }
 
-    // Helper function
+    // Helper function.
     // Converts GitHub's (due) date format to relative time
     function getRelativeDate(milestone) {
         var due_date = new Date(milestone.due_on);
