@@ -129,7 +129,7 @@ Related Projects
 [screenshots]:  https://github.com/ndarville/milestones.js/raw/master/screenshots/screenshot.png
 [milestones]:   http://blog.hackerbeers.com/2012/06/how-hackerbeers-uses-github-milestones-to-stay-focused-and-make-progress/
 [api]:          https://developer.github.com/v3/issues/milestones/
-[jsfiddle]:     http://jsfiddle.net/rGNGZ/
+[jsfiddle]:     http://jsfiddle.net/8EC3f/
 [download]:     https://github.com/ndarville/milestones.js/downloads
 [sketch]:       https://github.com/ndarville/milestones.js/issues/2
 [handcrafted]:  http://handcraftedcss.com/

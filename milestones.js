@@ -7,7 +7,7 @@ $(document).ready(function() {
     var username = "";
     var repo     = "";
     var css_file = ""; // "css/milestones.min.css"
-    
+
 // Optional arguments
     var sort_by = "due_date";
     var sort_order = "desc";
@@ -83,24 +83,20 @@ $(document).ready(function() {
             }
         }
     }
-            
+
     function displayMilestones(milestones) {
         $('head').append('<link rel="stylesheet" href="'+css_file+'" type="text/css" />');
             
         var ul = $("#milestones");
         $.each(milestones, function() {
             $.each(this, function(i, milestone) {
-                var url =
-                    'https://github.com/'+ 
-                    username+'/'+repo+
-                    '/issues?milestone='+(i+1);
                 var due = show_due === true ? '<em>'+getRelativeDate(milestone)+'</em>' : "";
 
                 if (milestone.state === "open" || show_closed) {
                     var li = document.createElement("li");
                     $(li).
-                        append($("<a>", {'href': url}).html(
-                           due+milestone.title)).                    
+                        append($("<a>", {'href': milestone.url}).html(
+                           due+milestone.title)).
                         append($("<span>",
                             {'style': 'width:' + getCompletionStatus(milestone) + '%;'})
                             .text(getCompletionStatus(milestone) + '%'));
@@ -112,7 +108,7 @@ $(document).ready(function() {
             '<li class="no-milestones"><i>No current milestones for this repo</i></li>'
         );
     }
-    
+
     // $.ajaxSetup({
     //     type: "GET",
     //     datatype: "jsonp",
