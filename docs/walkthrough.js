@@ -3,7 +3,7 @@ $(document).ready(function() {
     var username = "";
     var repo     = "";
     var css_file = ""; // "css/milestones.min.css"
-    
+
     // Optional arguments (because they have working default values)
     var sort_by = "due_date";
     var sort_order = "desc";
