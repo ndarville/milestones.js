@@ -91,11 +91,15 @@ $(document).ready(function() {
         $.each(milestones, function() {
             $.each(this, function(i, milestone) {
                 var due = show_due === true ? '<em>'+getRelativeDate(milestone)+'</em>' : "";
+                var url =
+                    'https://github.com/'+ 
+                    username+'/'+repo+
+                    '/issues?milestone='+(i+1);
 
                 if (milestone.state === "open" || show_closed) {
                     var li = document.createElement("li");
                     $(li).
-                        append($("<a>", {'href': milestone.url}).html(
+                        append($("<a>", {'href': url}).html(
                            due+milestone.title)).
                         append($("<span>",
                             {'style': 'width:' + getCompletionStatus(milestone) + '%;'})

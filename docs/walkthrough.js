@@ -98,6 +98,11 @@ $(document).ready(function() {
             $.each(this, function(i, milestone) {
                 // Display the milestone's due date, if we've set `show_due` to `true`
                 var due = show_due === true ? '<em>'+getRelativeDate(milestone)+'</em>' : "";
+                // Fetch milestone's URL. milestone.url fetches https://api..., which is no good.
+                var url =
+                    'https://github.com/'+ 
+                    username+'/'+repo+
+                    '/issues?milestone='+(i+1);
 
                 // If the milestone is open, or if we've set `show_closed` to `true`
                 if (milestone.state === "open" || show_closed) {
@@ -105,7 +110,7 @@ $(document).ready(function() {
                     var li = document.createElement("li");
                     $(li).
                         // Append a link to `li`
-                        append($("<a>", {'href': milestone.url}).html(
+                        append($("<a>", {'href': url}).html(
                            due+milestone.title)).
                         // Append a `span` element to `li` containing the completion status
                         // as well the HTML we create the progress bar with
