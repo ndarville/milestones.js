@@ -94,7 +94,7 @@ $(document).ready(function() {
                 var url =
                     'https://github.com/'+ 
                     username+'/'+repo+
-                    '/issues?milestone='+(i+1);
+                    '/issues?milestone='+milestone.number;
 
                 if (milestone.state === "open" || show_closed) {
                     var li = document.createElement("li");

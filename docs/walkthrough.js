@@ -102,7 +102,7 @@ $(document).ready(function() {
                 var url =
                     'https://github.com/'+ 
                     username+'/'+repo+
-                    '/issues?milestone='+(i+1);
+                    '/issues?milestone='+milestone.number;
 
                 // If the milestone is open, or if we've set `show_closed` to `true`
                 if (milestone.state === "open" || show_closed) {
