@@ -1,5 +1,3 @@
-README
-======
 ![Screenshot][screenshots]
 
 Why `milestones.js`?
