@@ -63,7 +63,7 @@ When you first download the code for `milestones.js`, it will look like this:
     var username = "";
     var repo     = "";
     var css_file = ""; // "css/milestones.min.css"
-    
+
 // Optional parameters
     var sort_by = "due_date";
     var sort_order = "desc";
@@ -122,6 +122,7 @@ Related Projects
 ----------------
 * [Release Notes](https://github.com/posabsolute/releasenotes)
 * [DocumentUp](http://documentup.com/#gh-pages)
+* [Balanced Payments Status Board](http://blog.balancedpayments.com/status-page/)
 
 
 [screenshots]:  https://github.com/ndarville/milestones.js/raw/master/screenshots/screenshot.png
